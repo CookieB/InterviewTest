@@ -25,7 +25,7 @@ namespace Testsolution.Web.Controllers
 
         [HttpGet]
         [Route("GetPerson/{id}")]
-        public object Get(int id)
+        public Person Get(int id)
         {
             return this.personManager.Get(id);
         }

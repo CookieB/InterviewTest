@@ -1,0 +1,40 @@
+﻿@model Testsolution.Data.Entities.Person
+@{
+    Layout = "~/Views/Layout.cshtml";
+    ViewBag.Title = "Person Details";
+}
+
+<h2>Person Details</h2>
+<dl class="dl-horizontal"> 
+    <dt>
+        @Html.DisplayNameFor(model => model.Company)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Company)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.FirstName)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.FirstName)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.LastName)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.LastName)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Email)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Email)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Country)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Country)
+    </dd>
+</dl>
+
