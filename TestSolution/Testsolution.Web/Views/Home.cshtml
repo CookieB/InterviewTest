@@ -16,7 +16,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="person in people | paginate : 'persontable' : 20 | tableSort : 'persontable' : 'Id'">
+        <tr ng-repeat="person in people | tableSort : 'persontable' : 'Id'| paginate : 'persontable' : 20 ">
             <td ng-bind="person.FirstName"></td>
             <td ng-bind="person.LastName"></td>
             <td ng-bind="person.Company"></td>
